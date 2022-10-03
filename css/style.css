@@ -520,3 +520,61 @@
   font-size: 12px;
   padding-top: 3px;
 }
+
+/* 콘텐츠 요소를 보이지 않게 하는 방법 
+1. display: none
+2. visibility : hidden 
+3. opacity: 0 
+4. w0 h0 
+*/
+
+/* tab menu */
+.tab_menu{
+  position: relative;
+  height: 105px;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+.tab_menu ul{
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+}
+.tab_menu ul li {
+  float: left;
+  border: 1px solid #ccc;
+  margin-right: -1px;
+  margin-bottom: -1px;
+}
+.tab_menu ul li a {
+  display: block;
+  padding: 5px 10px;
+}
+.tab_menu ul li ul {
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 270px;
+  border: 0;
+}
+.tab_menu ul li ul li {
+  float: none;
+  border: 0;
+  background: url(../img/dot.gif) no-repeat 9px 8px;
+  padding-left: 18px;
+}
+.tab_menu ul li ul li a{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  padding: 0 0 3px 0;
+}
+.tab_menu ul li.active {
+  background: #2c94c4;
+}
+.tab_menu ul li.active a {
+  color: #fff;
+}
+.tab_menu ul li.active ul li a {
+  color: #333;
+}
