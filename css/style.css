@@ -391,7 +391,6 @@
   padding-bottom: 3px;
   font-weight: bold;
 }
-.notice3 ul {}
 .notice3 li {
   position: relative;
   padding: 8px 0 14px 60px;
@@ -425,6 +424,47 @@
   background: url(../img/icon.png) -150px -90px;
   width: 17px;
   height: 17px;
+}
+
+/* 게시판 4 */
+.notice4 {
+  position: relative;
+  border: 1px solid #ccc;
+}
+.notice4 h4 {
+  font-size: 14px;
+  color: #0093bd;
+  padding: 8px 10px;
+  border-bottom: 1px solid #ccc;
+  font-weight: 700;
+}
+.notice4 h4 em {
+  color: #cf3292;
+}
+.notice4 ul {
+  padding: 10px;
+}
+.notice4 ul li {
+  overflow: hidden;
+  padding-left: 8px;
+  background: url(../img/dot.gif) no-repeat 0 8px;
+}
+.notice4 li a {
+  float: left;
+  width: 60%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.notice4 li span {
+  float: right;
+  text-align: right;
+  width: 30%;
+}
+.notice4 a.more {
+  position: absolute;
+  top: 9px;
+  right: 9px;
 }
 
 /* 마우스 호버 효과1 */
@@ -577,4 +617,64 @@
 }
 .tab_menu ul li.active ul li a {
   color: #333;
+}
+
+/* 갤러리 */
+.gallery {
+  position: relative;
+  border: 1px solid #ccc;
+  height: 254px;
+  overflow: hidden;
+}
+.gallery h4 {
+  font-size: 14px;
+  color: #0093bd;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0 8px 11px;
+  font-weight: bold;
+}
+.gallery .gallery_btn {
+  position: absolute;
+  top: 7px;
+  right: 5px;
+}
+.gallery .gallery_btn ul {
+  overflow: hidden;
+}
+.gallery .gallery_btn li {
+  float: left;
+  margin: 1px 2px;
+}
+.gallery .gallery_btn li a{
+  display: block;
+  width: 23px;
+  height: 23px;
+  background: url(../img/icon.png) no-repeat;
+}
+.gallery .gallery_btn li.gb_icon1 a {
+  background-position: -150px -120px;
+}
+.gallery .gallery_btn li.gb_icon2 a {
+  background-position: -150px -143px;
+}
+.gallery .gallery_btn li.gb_icon3 a {
+  background-position: -150px -166px;
+}
+.gallery .gallery_btn li.gb_icon4 a {
+  background-position: -150px -189px;
+}
+.gallery .gallery_btn li.gb_icon1 a:hover {
+  background-position: -173px -120px;
+}
+.gallery .gallery_btn li.gb_icon2 a:hover {
+  background-position: -173px -143px;
+}
+.gallery .gallery_btn li.gb_icon3 a:hover {
+  background-position: -173px -166px;
+}
+.gallery .gallery_btn li.gb_icon4 a:hover {
+  background-position: -173px -189px;
+}
+.gallery .gallery_img img {
+  width: 100%;
 }
