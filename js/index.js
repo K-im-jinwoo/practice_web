@@ -10,3 +10,14 @@ $(".tit .btn").click(function(e){
   $("#cont_nav").slideToggle();
   $(this).toggleClass("on");
 });
+
+// 배너
+// html 마크업 셋팅 -> css 연동 -> 제이쿼리 연동 --> 제이쿼리 호출
+$(".ban").slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  dots: true
+});
