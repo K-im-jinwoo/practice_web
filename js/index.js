@@ -47,13 +47,23 @@ $(".gallery_img").slick({
 });
 $(".play").click(function(){
   $(".gallery_img").slick("slickPlay")
-})
+});
 $(".pause").click(function(){
   $(".gallery_img").slick("slickPause")
-})
+});
 $(".prev").click(function(){
   $(".gallery_img").slick("slickPrev")
-})
+});
 $(".next").click(function(){
   $(".gallery_img").slick("slickNext")
-})
+});
+
+// 레이어 팝업
+$(".layer").click(function(e){
+  e.preventDefault();
+  $("#layer").slideDown();
+});
+$("#layer .close").click(function(e){
+  e.preventDefault();
+  $("#layer").slideUp();
+});
