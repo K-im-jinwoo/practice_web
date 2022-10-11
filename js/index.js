@@ -67,3 +67,11 @@ $("#layer .close").click(function(e){
   e.preventDefault();
   $("#layer").slideUp();
 });
+
+// 윈도우 팝업
+$(".window").click(function(e){
+  e.preventDefault();
+  // window.open("파일명","팝업이름","옵션설정")
+  // 옵션: left top width height status toolbar location menubar scrollbars fullscreen
+  window.open("sample_popup.html","popup01","width=800, height=590, left=50,top=50,scrollbars=0, toolbar=0, menubar=0")
+})
