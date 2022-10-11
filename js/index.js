@@ -75,3 +75,11 @@ $(".window").click(function(e){
   // 옵션: left top width height status toolbar location menubar scrollbars fullscreen
   window.open("sample_popup.html","popup01","width=800, height=590, left=50,top=50,scrollbars=0, toolbar=0, menubar=0")
 })
+
+// 라이트 박스
+lightGallery(document.getElementById('lightgallery'), {
+  plugins: [lgZoom, lgThumbnail],
+  licenseKey: 'your_license_key',
+  speed: 500,
+  // ... other settings
+});
